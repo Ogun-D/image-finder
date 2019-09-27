@@ -2,6 +2,7 @@
   "name": "second-react-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://Ogun-D.github.io/image-finder",
   "dependencies": {
     "axios": "^0.19.0",
     "faker": "^4.1.0",
@@ -12,6 +13,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -31,6 +34,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "husky": {
       "hooks": {
         "pre-commit": "pretty-quick --staged"
